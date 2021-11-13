@@ -6,7 +6,7 @@ function openNav() {
 
 function closeNav() {
     var closeNav = $('.sidenav-close-button');
-    document.getElementById("sidenav").style.marginRight = "-321";	
+    document.getElementById("sidenav").style.marginRight = "-301";	
     closeNav.toggleClass('rotate');
 }
 
