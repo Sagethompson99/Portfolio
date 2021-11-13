@@ -4,7 +4,7 @@
         <link href="styles.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
         <title>Sage Thompson</title>
         <link rel="manifest" href="manifest.json">
         <link rel="apple-touch-icon" href="Apple-touch-icon.png"> 
@@ -16,17 +16,30 @@
     <body>
         <div class="page-content"> 
             <nav>
-                <img class="sidenav-open-button" src="assets/custom-icons/navbar-icon.svg" onclick="openNav()" alt="navbar-expand">
-                <a class="large-screen-nav" id="active" href="#">Home</a>
-                <a class="large-screen-nav" href="#">Apps</a>
-                <a class="large-screen-nav" href="#">Web</a>
-                <a class="large-screen-nav" href="#">Experience</a>
+                <img style="width: 48; margin: 2 12 -13 0" src="assets/logo.png" alt="logo">
+                <img class="sidenav-open-button" src="assets/navbar-icon.svg" onclick="openNav()" alt="navbar-expand">
+                <a class="large-screen-nav home" id="active" href="#">Home</a>
+                <a class="large-screen-nav apps" href="#">Apps</a>
+                <a class="large-screen-nav web" href="#">Web</a>
+                <a class="large-screen-nav experience" href="#">Experience</a>
             </nav>
             <div class="sidenav" id="sidenav">
+                <img id="sidenav-close-button" class="sidenav-close-button" src="assets/sidenav-close-button.svg" onclick="closeNav()" alt="navbar-expand">
+                <a class="large-screen-nav home" id="active_sidebar" href="#">Home</a>
+                <a class="large-screen-nav apps" href="#">Apps</a>
+                <a class="large-screen-nav web" href="#">Web</a>
+                <a class="large-screen-nav experience" href="#">Experience</a>
             </div>
-            <div class="row" id="homepage-top-content">
+            <div class="row" id="top-content">
                 <div class="col">
-                    <h1 id="main-title">Sage Thompson</h1>
+                    <div class="row">
+                        <div class="col">
+                            <h1 id="main-title">Sage Thompson</h1>
+                            <h3 id="job-title">Software Engineer</h3>
+                            <button>Contact</button>
+                        </div>
+                        <img id="blob" src="assets/blobs.svg" style="margin:0 auto; display:block;" alt="decorative blobs">
+                    </div>
                 </div>
                 <div class="spacer"></div>
             </div>

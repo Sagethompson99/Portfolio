@@ -19,6 +19,10 @@ nav {
     padding: 8 0 8 0;
 }
 
+#top-content {
+    margin-top: 65;
+}
+
 a {
    margin: 0 10 0 10;
    text-decoration: none;
@@ -29,12 +33,37 @@ a {
    color: white;
 }
 
-a:hover {
-    opacity: 70%;
+.home:hover {
+    color: #60A4E5;
 }
 
+.apps:hover {
+    color: #B57EFF;
+}
+
+.web:hover {
+    color: #1CD371;
+}
+
+.experience:hover {
+    color: #E9FE47;
+}
+
+
 button {
+    color: white;
+    background: rgba(255,0,0,0);
+    border-radius: 6px;
+    border: 2px solid white;
     transition: 0.2s;
+    padding: 10 30 10 30;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.large-screen-nav {
+    padding-bottom: 2;
 }
 
 .sidenav-open-button {
@@ -42,6 +71,7 @@ button {
     transition: 0.3s;
     float: right;
     margin-top: 3;
+    width: 40;
 }
 
 .sidenav-close-button {
@@ -90,6 +120,20 @@ button {
 #main-title {
     font-size: 50;
     color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+#job-title {
+    margin-top: -30;
+    font-size: 28;
+    font-weight: 100;
+    color: rgb(155, 155, 155);
+    transition: 0.3s;
+}
+
+#blob {
+    padding-left: 30px;
 }
 
 .row {
@@ -174,5 +218,15 @@ button:hover{
 
     .sidenav-open-button {
         display: block;
+    }
+
+    #top-content {
+        margin-top: 35;
+    }
+
+    #blob {
+        width: 90vw;
+        padding-top: 80px;
+        padding-left: 0;
     }
 }
