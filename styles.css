@@ -35,18 +35,22 @@ a {
 
 .home:hover {
     color: #60A4E5;
+    border-bottom-color: #60A4E5;
 }
 
 .apps:hover {
     color: #B57EFF;
+    border-bottom-color: #B57EFF;
 }
 
 .web:hover {
     color: #1CD371;
+    border-bottom-color: #1CD371;
 }
 
 .experience:hover {
     color: #E9FE47;
+    border-bottom-color: #E9FE47;
 }
 
 button {
@@ -135,7 +139,7 @@ button {
  }
 
 #active {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid;
 }
 
 #main-title {

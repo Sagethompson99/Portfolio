@@ -22,3 +22,15 @@ function toggleContactInfo() {
         delay += 50;   
     });
 }
+
+function openInstagram() {
+    window.open("https://www.instagram.com/sage.thompsonn/");
+}
+
+function openEmail(){
+    window.open('mailto:sagethompson85@gmail.com')
+}
+
+function openLinkedin(){
+    window.open("https://www.linkedin.com/in/sagethompson99/");
+}
