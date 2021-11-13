@@ -243,6 +243,10 @@ button:hover{
         display: none;
     }
 
+    .page-content {
+        margin-top: 10px;
+    }
+
     .spacer {
         width: 0;
         height: 0;
