@@ -142,6 +142,22 @@ button {
     border-bottom: 2px solid;
 }
 
+#sidenav-active-home {
+    color: #60A4E5;
+}
+
+#sidenav-active-apps {
+    color: #B57EFF;
+}
+
+#sidenav-active-web {
+    color: #1CD371;
+}
+
+#sidenav-active-experience {
+    color: #E9FE47;
+}
+
 #main-title {
     font-size: 50;
     color: white;
