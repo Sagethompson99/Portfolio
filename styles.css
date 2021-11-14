@@ -23,6 +23,10 @@ nav {
     margin-top: 65;
 }
 
+.main-image {
+    width: 50%;
+}
+
 a {
    margin: 0 10 0 10;
    text-decoration: none;
@@ -188,10 +192,10 @@ button {
 
 .primary-button {
     background-color: white;
-    padding: 5 10 5 10;
-    border: 1px solid white;
+    padding: 10 15 10 15;
     border-radius: 5px;
     color: black;
+    border: none;
 }
 
 button:hover{
@@ -333,5 +337,9 @@ button:hover{
 
     .contact-button {
         margin-left: 10;
+    }
+
+    .main-image {
+        width: 100%;
     }
 }
