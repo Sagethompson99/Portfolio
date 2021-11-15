@@ -190,6 +190,11 @@ button {
     flex: 1;
 }
 
+.grid-stack {
+    grid-column: 1;
+    grid-row: 1;
+}
+
 .primary-button {
     background-color: white;
     padding: 10 15 10 15;
