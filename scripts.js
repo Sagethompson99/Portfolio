@@ -67,6 +67,14 @@ function toggleContactInfo() {
     });
 }
 
+function openVisualize(){
+    window.open("https://play.google.com/store/apps/details?id=com.sage.Visualize")
+}
+
+function openPuttPoints(){
+    window.open("https://play.google.com/store/apps/details?id=com.minigolf.puttpoints")
+}
+
 function openInstagram() {
     window.open("https://www.instagram.com/sage.thompsonn/");
 }
