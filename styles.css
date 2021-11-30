@@ -144,6 +144,10 @@ button {
     color: #fefefe;
  }
 
+.thin-text {
+    font-weight: 300;
+}
+
 #active {
     border-bottom: 2px solid;
 }
