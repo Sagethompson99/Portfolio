@@ -77,7 +77,8 @@ button {
 .contact-button {
     margin-top: 11;
     transition: 0.2s;
-    scale: 0;
+    -webkit-transform:scale(0);
+    transform:scale(0);
 }
 
 #contactButtonContainer {
@@ -88,7 +89,8 @@ button {
 }
 
 .show-contact-buttons {
-    scale: 1;
+    -webkit-transform:scale(1);
+    transform:scale(1);
 }
 
 .large-screen-nav {
