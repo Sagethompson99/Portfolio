@@ -10,9 +10,9 @@ body {
 }
 
 .page-content {
-    max-width: 1250px;
+    margin-left: 8vw;
+    padding-right: 8vw;
     padding: 10 20 10 20;
-    margin: 0 auto;
 }
 
 nav {
@@ -21,6 +21,7 @@ nav {
 
 #top-content {
     margin-top: 65;
+    z-index: 199;
 }
 
 .main-image {
@@ -81,10 +82,14 @@ button {
     transform:scale(0);
 }
 
+.contact-button:hover{
+    scale: 1.05;
+}
+
 #contactButtonContainer {
     margin-top: 5;
     width: 50;
-    z-index: 1; 
+    z-index: 99; 
     position: absolute;
 }
 
@@ -173,6 +178,7 @@ button {
     color: white;
     font-weight: 500;
     transition: 0.3s;
+    z-index: 99;
 }
 
 #job-title {
@@ -211,6 +217,7 @@ button {
 
 button:hover{
     scale: 1.02;
+    transition: 0.2s;;
 }
 
 .spacer {
@@ -261,6 +268,8 @@ button:hover{
 
     .page-content {
         margin-top: 10px;
+        margin-left: 0vw;
+        margin-right: 0vw;
     }
 
     .spacer {
@@ -289,7 +298,6 @@ button:hover{
 
     #contactButtonContainer {
         width: 230;
-        z-index: 1; 
         position: absolute;
         margin-left: 150;
         margin-top: -65;

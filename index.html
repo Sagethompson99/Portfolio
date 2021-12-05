@@ -14,8 +14,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="blobs/blobz.css">;
     </head> 
-    <body style="padding-bottom: 10vh">
-        <div class="page-content"> 
+    <body >
+        <div class="page-content" style="background-color: black; overflow: hidden; padding-bottom: 15vh"> 
             <nav>
                 <img style="width: 48; margin: 2 12 -13 0" src="assets/logo.png" alt="logo">
                 <img class="sidenav-open-button" src="assets/navbar-icon.svg" onclick="openNav()" alt="navbar-expand">
@@ -34,9 +34,9 @@
             <div class="row" id="top-content">
                 <div class="col">
                     <div class="row">
-                        <div class="col">
+                        <div class="col" style="position: relative; z-index: 99">
                             <h1 id="main-title" class="js-scroll fade-in-bottom">Sage Thompson</h1>
-                            <h3 id="job-title" class="js-scroll fade-in-bottom">Software Engineer</h3>
+                            <h3 id="job-title"class="js-scroll fade-in-bottom">Software Engineer</h3>
                             <button id="contactButton" class="js-scroll fade-in-bottom" onclick="toggleContactInfo()">Contact</button>
                             <div id="contactButtonContainer" class="col">
                                 <img class="contact-button" src="assets/email-button.svg" onclick="openEmail()" alt="email">
@@ -45,23 +45,23 @@
                             </div>
                         </div>
 
-                        <div class="col" style="display: grid; max-width: 80vw">
-                            <div class="tk-blob grid-stack" style="--time: 75s; --amount: 4; --fill: #60A4E5; opacity: 0.8; z-index: -1; margin-top: 10vh; margin-left: 10vw; margin-right: -7vw">
+                        <div class="col" style="display: grid; max-width: 80vw; padding-right: 1vw;">
+                            <div class="tk-blob grid-stack" style="--time: 75s; --amount: 4; --fill: #60A4E5; opacity: 0.8; margin-top: 10vh; margin-left: 10vw; margin-right: -7vw">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 747.2 726.7">
                                   <path d="M539.8 137.6c98.3 69 183.5 124 203 198.4 19.3 74.4-27.1 168.2-93.8 245-66.8 76.8-153.8 136.6-254.2 144.9-100.6 8.2-214.7-35.1-292.7-122.5S-18.1 384.1 7.4 259.8C33 135.6 126.3 19 228.5 2.2c102.1-16.8 213.2 66.3 311.3 135.4z"></path>
                                 </svg>
                             </div>
-                            <div class="tk-blob grid-stack" style="--time: 65s; --amount: 2; --fill: #E947FF; opacity: 0.8; z-index: -2; margin-top: 5vw; margin-left: -10vw; margin-right: 10vw">
+                            <div class="tk-blob grid-stack" style="--time: 65s; --amount: 2; --fill: #E947FF; opacity: 0.8; margin-top: 5vw; margin-left: -10vw; margin-right: 10vw">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 747.2 726.7">
                                   <path d="M539.8 137.6c98.3 69 183.5 124 203 198.4 19.3 74.4-27.1 168.2-93.8 245-66.8 76.8-153.8 136.6-254.2 144.9-100.6 8.2-214.7-35.1-292.7-122.5S-18.1 384.1 7.4 259.8C33 135.6 126.3 19 228.5 2.2c102.1-16.8 213.2 66.3 311.3 135.4z"></path>
                                 </svg>
                             </div>
-                            <div class="tk-blob grid-stack" style="--time: 70s; --amount: 8; --fill: #1CD371; opacity: 0.8; z-index: -3; margin-left: 10vh; margin-right: -8vw">
+                            <div class="tk-blob grid-stack" style="--time: 70s; --amount: 8; --fill: #1CD371; opacity: 0.8; margin-left: 10vh; margin-right: -8vw">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 747.2 726.7">
                                   <path d="M539.8 137.6c98.3 69 183.5 124 203 198.4 19.3 74.4-27.1 168.2-93.8 245-66.8 76.8-153.8 136.6-254.2 144.9-100.6 8.2-214.7-35.1-292.7-122.5S-18.1 384.1 7.4 259.8C33 135.6 126.3 19 228.5 2.2c102.1-16.8 213.2 66.3 311.3 135.4z"></path>
                                 </svg>
                             </div>
-                            <div class="tk-blob grid-stack" style="--fill: #e9fe47; opacity: 0.8; z-index: -4; margin-top: -8vh">
+                            <div class="tk-blob grid-stack" style="--fill: #e9fe47; opacity: 0.8; margin-top: -8vh">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 425.9 377">
                                   <path d="M389.3 42c39.8 40.8 47.5 116.3 21.3 165.4-26.1 49.1-86 71.8-145.9 104.3-59.8 32.5-119.6 74.8-168.9 63.4C46.5 363.7 7.6 298.5 1 235.7-5.5 173 20.3 112.5 59.8 71.9 99.3 31.2 152.4 10.2 215 2.8 277.5-4.7 349.5 1.2 389.3 42z"></path>
                                 </svg>

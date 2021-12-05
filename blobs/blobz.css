@@ -2,17 +2,18 @@
   animation: blob-turn var(--time, 30s) linear infinite;
   fill: var(--fill, #7600f8);
   position: relative;
-  transform-origin: center;
+  transform-origin: initial;
 }
 
 .tk-blob svg {
   animation: blob-skew calc( var(--time, 30s) * 0.5 ) linear 0s infinite;
-  transform-origin: center;
+  transform-origin: initial;
+  max-width: 70%;
 }
 
 .tk-blob svg path {
   animation: blob-scale calc( var(--time, 30s) * 0.5 ) ease-in-out 0s infinite;
-  transform-origin: center;
+  transform-origin: initial;
 }
 
 @keyframes blob-turn {
