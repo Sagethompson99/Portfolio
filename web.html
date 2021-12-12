@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=0"">
+        <link href="styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+        <title>Sage Thompson</title>
+        <link rel="manifest" href="manifest.json">
+        <link rel="apple-touch-icon" href="Apple-touch-icon.png"> 
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">   
+        <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+        <script src="https://kit.fontawesome.com/984a991b1b.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="blobs/blobz.min.css">;
+    </head> 
+    <body>
+        <div class="page-content"> 
+            <nav>
+                <img style="width: 48; margin: 2 12 -13 0" src="assets/logo.png" alt="logo">
+                <img class="sidenav-open-button" src="assets/navbar-icon.svg" onclick="openNav()" alt="navbar-expand">
+                <a class="large-screen-nav home" href="index.html">Home</a>
+                <a class="large-screen-nav apps" href="apps.html">Apps</a>
+                <a class="large-screen-nav web"  id="active" href="#">Web</a>
+                <a class="large-screen-nav experience" href="experience.html">Experience</a>
+            </nav>
+            <div class="sidenav" id="sidenav">
+                <img id="sidenav-close-button" class="sidenav-close-button" src="assets/sidenav-close-button.svg" onclick="closeNav()" alt="navbar-expand">
+                <a class="large-screen-nav home" href="index.html">Home</a>
+                <a class="large-screen-nav apps" href="apps.html">Apps</a>
+                <a class="large-screen-nav web" id="sidenav-active-web" href="web.html">Web</a>
+                <a class="large-screen-nav experience" href="experience.html">Experience</a>
+            </div>
+            <div class="col" id="top-content">
+                    <div class="row js-scroll fade-in-bottom" style="margin-bottom: 120; align-items: center; transition: 0.2s">
+                        <img class="main-image" src="assets/website_images/pocketpropertieswebsite.png" alt="pocket properties website">
+                        <div class="col" style="margin: 30">
+                            <h1 style="color: white; font-weight: 500">Pocket Properties</h1>
+                            <h3 style="color: white; font-weight: 300">Redesigned website I created as a solo project for Pocket Properties while interning for them.
+                            I created this website using a combination of CSS, HTML, and Javascript. It is being hosted for free on Netlify</h3>
+                            <button class="primary-button" onclick="" style="background-color: #9253EB; color: white" >Go to website</button>
+                        </div>
+                        
+                    </div>
+                    <div class="row js-scroll fade-in-bottom" style="margin-bottom: 120; align-items: center">
+                        <img class="main-image" src="assets/website_images/qdobawebsite.png" alt="Qdoba Richmond website">
+                        <div class="col .js-scroll" style="margin: 30">
+                            <h1 style="color: white; font-weight: 500">Qdoba Job Application</h1>
+                            <h3 style="color: white; font-weight: 300">This is a project I completed for a local Qdoba restaurant location. The manager of the
+                            restaurant came to me with the idea of creating an online portal for accepting job applications, as they were only able to accept 
+                        paper applications at the time. Job applicants simply fill out the form and the form data is saved to a google sheet via a Google Script. When a new application is submitted,
+                         an email notification is sent to the manager notifying them that a new application has been recieved, and the manager can then view the application in Google Sheets. I created this website using HTML, CSS, Javascript, and Google Scripts</h3>
+                            <button class="primary-button" style="background-color: #F99D1C; color: white" >Go to website</button>
+                        </div>
+                    </div>
+               
+                <div class="spacer"></div>
+            </div>
+        </div>
+
+        <script src="scripts.js"></script>
+    </body>
+</html>
