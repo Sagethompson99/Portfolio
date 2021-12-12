@@ -75,6 +75,14 @@ function openPuttPoints(){
     window.open("https://play.google.com/store/apps/details?id=com.minigolf.puttpoints")
 }
 
+function openQdoba(){
+    window.open("https://qdoba-application.netlify.app")
+}
+
+function openPPWebsite(){
+    window.open("https://pocketproperties.netlify.app/index.html")
+}
+
 function openInstagram() {
     window.open("https://www.instagram.com/sage.thompsonn/");
 }
