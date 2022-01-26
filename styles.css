@@ -11,6 +11,7 @@ body {
 
 .page-content {
     margin-left: 8vw;
+    max-width: 1300px;
     padding-right: 8vw;
     padding: 10 20 10 20;
 }
@@ -25,7 +26,7 @@ nav {
 }
 
 .main-image {
-    width: 50%;
+    width: 60%;
 }
 
 a {
@@ -194,6 +195,18 @@ button {
     padding-left: 30px;
 }
 
+.display3 {
+    order: 3;
+}
+
+.display2 {
+    order: 2;
+}
+
+.display1 {
+    order: 1;
+}
+
 .row {
     display: flex;
 }
@@ -308,6 +321,6 @@ button:hover{
     }
 
     .main-image {
-        width: 100%;
+        width: 98%;
     }
 }
