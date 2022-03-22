@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="blobs/blobz.css">;
     </head> 
     <body >
-        <div class="page-content main-page" style="background-color: black; overflow: hidden; padding-bottom: 15vh"> 
+        <div class="page-content main-page" style="overflow: hidden; padding-bottom: 15vh"> 
             <nav>
                 <img style="width: 48; margin: 2 12 -13 0" src="assets/logo.png" alt="logo">
                 <img class="sidenav-open-button" src="assets/navbar-icon.svg" onclick="openNav()" alt="navbar-expand">
@@ -36,8 +36,11 @@
                 <div class="col">
                     <div class="row">
                         <div class="col" style="position: relative; z-index: 99">
-                            <h1 id="main-title" class="js-scroll fade-in-bottom">Sage Thompson</h1>
+                            <div style="display: inline-block">
+                            <h1 class="type" id="main-title" class="js-scroll fade-in-bottom">Sage Thompson</h1>
+                        </div>
                             <h3 id="job-title"class="js-scroll fade-in-bottom">Software Engineer</h3>
+                        
                             <button id="contactButton" class="js-scroll fade-in-bottom" onclick="toggleContactInfo()">Contact</button>
                             <div id="contactButtonContainer" class="col">
                                 <img class="contact-button" src="assets/email-button.svg" onclick="openEmail()" alt="email">
