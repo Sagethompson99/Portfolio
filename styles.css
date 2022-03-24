@@ -293,6 +293,13 @@ button:hover{
     -ms-transform: rotate(90deg);
 }
 
+#animatedDiv {
+    scroll-snap-align: start;
+    margin-top: 50px;
+    background: white;
+    height: 100vh;
+    margin: 0 auto;
+}
 
 @media only screen and (max-width: 765px) { 
     .row {

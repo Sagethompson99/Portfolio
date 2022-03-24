@@ -67,6 +67,16 @@ function toggleContactInfo() {
     });
 }
 
+var aDiv = document.getElementById("animatedDiv");
+
+function changeWidth() {
+    var scrollVal = window.pageYOffset;
+    var scrollSlow  = (scrollVal / 6);
+    
+    aDiv.style.width = Math.min(scrollSlow, 100) + "%";
+    aDiv.style.height = Math.min(scrollSlow, 100) + "%";
+}
+
 function openVisualize(){
     window.open("https://play.google.com/store/apps/details?id=com.sage.Visualize")
 }
