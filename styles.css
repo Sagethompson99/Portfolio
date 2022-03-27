@@ -354,4 +354,8 @@ button:hover{
     .main-image {
         width: 100%;
     }
+
+    #home-page-content {
+        padding-bottom: 15vh;
+    }
 }
