@@ -14,9 +14,14 @@
         <script src="https://kit.fontawesome.com/984a991b1b.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="blobs/blobz.min.css">
-        <script src="scripts.js"></script>
     </head> 
     <body>
+        <script>
+            function hideLoader(loaderID, imageID) {
+                document.getElementById(loaderID).classList.add("hidden");
+                document.getElementById(imageID).classList.remove("hidden");
+            }
+        </script>
         <div class="page-content" style="padding-bottom: 80px"> 
             <nav>
                 <img style="width: 48; margin: 2 12 -13 0" src="assets/logo.png" alt="logo">
@@ -99,5 +104,7 @@
                 <div class="spacer"></div>
             </div>
         </div>
+
+        <script src="scripts.js"></script>
     </body>
 </html>
