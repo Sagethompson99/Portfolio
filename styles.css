@@ -49,6 +49,11 @@ nav {
     z-index: 199;
 }
 
+.section {
+    margin-bottom: 120; 
+    align-items: center;
+}
+
 .main-image {
     width: 60%;
 }
