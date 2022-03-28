@@ -43,11 +43,6 @@ $(document).ready(function() {
     handleScrollAnimation();
 });
 
-function hideLoader(loaderID, imageID) {
-    document.getElementById(loaderID).classList.add("hidden");
-    document.getElementById(imageID).classList.remove("hidden");
-}
-
 function openNav() {
     var closeNav = $('.sidenav-close-button');
     document.getElementById("sidenav").style.marginRight = "0";	

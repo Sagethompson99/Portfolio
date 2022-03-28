@@ -99,6 +99,12 @@
             </div>
         </div>
 
+        <script>
+            function hideLoader(loaderID, imageID) {
+                document.getElementById(loaderID).classList.add("hidden");
+                document.getElementById(imageID).classList.remove("hidden");
+            }
+        </script>
         <script src="scripts.js"></script>
     </body>
 </html>
