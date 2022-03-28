@@ -35,8 +35,9 @@ const handleScrollAnimation = () => {
     })
 }
 
-function hideLoader(loaderID) {
+function hideLoader(loaderID, imageID) {
     document.getElementById(loaderID).classList.add("hidden");
+    document.getElementById(imageID).classList.remove("hidden");
 }
 
 window.addEventListener("scroll", () => { 
