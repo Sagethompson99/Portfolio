@@ -35,11 +35,6 @@ const handleScrollAnimation = () => {
     })
 }
 
-function hideLoader(loaderID, imageID) {
-    document.getElementById(loaderID).classList.add("hidden");
-    document.getElementById(imageID).classList.remove("hidden");
-}
-
 window.addEventListener("scroll", () => { 
     handleScrollAnimation();
 });
@@ -47,6 +42,11 @@ window.addEventListener("scroll", () => {
 $(document).ready(function() { 
     handleScrollAnimation();
 });
+
+function hideLoader(loaderID, imageID) {
+    document.getElementById(loaderID).classList.add("hidden");
+    document.getElementById(imageID).classList.remove("hidden");
+}
 
 function openNav() {
     var closeNav = $('.sidenav-close-button');
