@@ -35,8 +35,8 @@ const handleScrollAnimation = () => {
     })
 }
 
-const hideLoadingView = (element) => {
-    element.classList.add("hidden");
+function hideLoader(loaderID) {
+    document.getElementById(loaderID).classList.add("hidden");
 }
 
 window.addEventListener("scroll", () => { 
@@ -45,7 +45,6 @@ window.addEventListener("scroll", () => {
 
 $(document).ready(function() { 
     handleScrollAnimation();
-    loadingViews.forEach((element) => { hideLoadingView(element) });
 });
 
 function openNav() {
