@@ -1,4 +1,5 @@
 const scrollElements = document.querySelectorAll(".js-scroll");
+const loadingViews = document.querySelectorAll(".loading");
 
 const elementInView = (el, dividend = 1) => {
     const elementTop = el.getBoundingClientRect().top;
@@ -34,12 +35,17 @@ const handleScrollAnimation = () => {
     })
 }
 
+const hideLoadingView = (element) => {
+    element.classList.add("hidden");
+}
+
 window.addEventListener("scroll", () => { 
     handleScrollAnimation();
 });
 
 $(document).ready(function() { 
     handleScrollAnimation();
+    loadingViews.forEach((element) => { hideLoadingView(element) });
 });
 
 function openNav() {
@@ -67,7 +73,7 @@ function toggleContactInfo() {
     });
 }
 
-var aDiv = document.getElementById("animatedDiv");
+const aDiv = document.getElementById("animatedDiv");
 
 function changeWidth() {
     var scrollVal = window.pageYOffset;
