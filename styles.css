@@ -112,9 +112,6 @@ button {
     transform:scale(0);
 }
 
-.contact-button:hover{
-    scale: 1.05;
-}
 
 #contactButtonContainer {
     margin-top: 5;
