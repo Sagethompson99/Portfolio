@@ -1,91 +1,113 @@
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=0">
-        <link href="styles.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
-        <title>Sage Thompson</title>
-        <link rel="icon" type="image/png" href="assets/icon.png">
-        <link rel="manifest" href="manifest.json">
-        <link rel="apple-touch-icon" href="Apple-touch-icon.png"> 
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">   
-        <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
-        <script src="https://kit.fontawesome.com/984a991b1b.js" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="blobs/blobz.css">;
-    </head> 
-    <body>
-        <div class="page-content" style="padding-bottom: 80px"> 
-            <nav>
-                <img style="width: 48; margin: 2 12 -13 0" src="assets/logo.png" alt="logo">
-                <img class="sidenav-open-button" src="assets/navbar-icon.svg" onclick="openNav()" alt="navbar-expand">
-                <a class="large-screen-nav home" href="index.html">Home</a>
-                <a class="large-screen-nav apps" href="apps.html">Apps</a>
-                <a class="large-screen-nav web" href="web.html">Web</a>
-                <a class="large-screen-nav experience" id="active" href="#">Experience</a>
-            </nav>
-            <div class="sidenav" id="sidenav">
-                <img id="sidenav-close-button" class="sidenav-close-button" src="assets/sidenav-close-button.svg" onclick="closeNav()" alt="navbar-expand">
-                <a class="large-screen-nav home" href="index.html">Home</a>
-                <a class="large-screen-nav apps" href="apps.html">Apps</a>
-                <a class="large-screen-nav web" href="web.html">Web</a>
-                <a class="large-screen-nav experience" id="sidenav-active-experience" href="#">Experience</a>
-            </div>
-            <div class="row" id="top-content" style="color: white">
-                <div class="col">
-                    <div class="row">
-                        <div class="col js-scroll fade-in-bottom"> 
-                            <h1 style="font-weight: 400; margin-bottom: 5">Coding Langauges</h1>
-                            <div style="display: flex; justify-content: space-between; max-width: 300">
-                                <div>
-                                    <h3 class="thin-text">Java</h3>
-                                    <h3 class="thin-text">C</h3>
-                                    <h3 class="thin-text">CSS</h3>
-                                    <h3 class="thin-text">HTML</h3>
-                                </div>
-                                <div>
-                                    <h3 class="thin-text">SQL</h3>
-                                    <h3 class="thin-text">Flutter</h3>
-                                    <h3 class="thin-text">Python</h3>
-                                    <h3 class="thin-text">React</h3>
-                                </div>
-                                <div>
-                                    <h3 class="thin-text">JCL</h3>
-                                    <h3 class="thin-text">Javascript</h3>
-                                    <h3 class="thin-text">PHP</h3>
-                                </div>
-                            </div>   
-                        </div>
-                        <div style="height: 30"></div>
-                        <div class="col js-scroll fade-in-bottom">
-                            <h1 style="font-weight: 400; margin-bottom: 5">Job History</h1>
-                            <h3 style="font-weight: 400">Software Engineer Intern Manager <span style="font-weight: 200">- Pocket Properties</span></h3>
-                            <h3 style="font-weight: 400">Logistics Intern <span style="font-weight: 200">- Dynamic Aviation</span></h3>
-                            <h3 style="font-weight: 400">Cashier <span style="font-weight: 200">- Ciro's Pizza</span></h3>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Sage Thompson</title>
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="Apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script src="https://kit.fontawesome.com/984a991b1b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="blobs/blobz.css">;
+</head>
+
+<body>
+    <div class="page-content" style="padding-bottom: 80px">
+        <nav>
+            <img style="width: 48; margin: 2 12 -13 0" src="assets/logo.png" alt="logo">
+            <img class="sidenav-open-button" src="assets/navbar-icon.svg" onclick="openNav()" alt="navbar-expand">
+            <a class="large-screen-nav home" href="index.html">Home</a>
+            <a class="large-screen-nav apps" href="apps.html">Apps</a>
+            <a class="large-screen-nav web" href="web.html">Web</a>
+            <a class="large-screen-nav experience" id="active" href="#">Experience</a>
+        </nav>
+        <div class="sidenav" id="sidenav">
+            <img id="sidenav-close-button" class="sidenav-close-button" src="assets/sidenav-close-button.svg"
+                onclick="closeNav()" alt="navbar-expand">
+            <a class="large-screen-nav home" href="index.html">Home</a>
+            <a class="large-screen-nav apps" href="apps.html">Apps</a>
+            <a class="large-screen-nav web" href="web.html">Web</a>
+            <a class="large-screen-nav experience" id="sidenav-active-experience" href="#">Experience</a>
+        </div>
+        <div class="row" id="top-content" style="color: white">
+            <div class="col">
+                <div class="row">
+                    <div class="col js-scroll fade-in-bottom">
+                        <h1 style="font-weight: 400; margin-bottom: 5">Coding Langauges</h1>
+                        <div style="display: flex; justify-content: space-between; max-width: 300">
+                            <div>
+                                <h3 class="thin-text">Kotlin</h3>
+                                <h3 class="thin-text">Java</h3>
+                                <h3 class="thin-text">CSS</h3>
+                                <h3 class="thin-text">HTML</h3>
+                            </div>
+                            <div>
+                                <h3 class="thin-text">SQL</h3>
+                                <h3 class="thin-text">Dart</h3>
+                                <h3 class="thin-text">Python</h3>
+                                <h3 class="thin-text">React</h3>
+                            </div>
+                            <div>
+                                <h3 class="thin-text">JCL</h3>
+                                <h3 class="thin-text">C</h3>
+                                <h3 class="thin-text">Javascript</h3>
+                                <h3 class="thin-text">PHP</h3>
+                            </div>
                         </div>
                     </div>
                     <div style="height: 30"></div>
-                    <div class="row">
-                        <div class="col js-scroll fade-in-bottom"> 
-                            <h1 style="font-weight: 400; margin-bottom: 5">Relevant Experience</h1>
-                            <h3 class="thin-text">- Over 50 personal coding projects</h3>
-                            <h3 class="thin-text">- 2 published apps on Google Play Store</h3>
-                            <h3 class="thin-text">- 3 years of app design experience in Adobe XD</h3>
-                            <h3 class="thin-text" style="max-width: 500px">- Completed 2 of 3 levels of IBM's
-                                International Hack the Mainframe event</h3>
-                            <h3 class="thin-text" style="max-width: 500px">- Proficient with algorithms, object-oriented programming, debugging, version control, and software development</h3>
+                    <div class="col js-scroll fade-in-bottom">
+                        <h1 style="font-weight: 400; margin-bottom: 5">Job History</h1>
+                        <div>
+                            <h3 style="font-weight: 400">Android Software Engineer II <span style="font-weight: 200">-
+                                    WillowTree</span></h3>
+                            <h4 style="font-weight: 100; margin-top: -20">2024 - Present</h4>
                         </div>
-                        <div style="height: 30"></div>
-                        <div class="col js-scroll fade-in-bottom"> 
-                            <h1 style="font-weight: 400; margin-bottom: 5">Education</h1>
-                            <h3 class="thin-text"><span style="font-weight: 200">Bachelor's Degree in Computer Science - <i>Virginia Commonwealth University</i>, 3.7 GPA</h3>
+                        <div>
+                            <h3 style="font-weight: 400">Android Software Engineer I <span style="font-weight: 200">-
+                                    WillowTree</span></h3>
+                            <h4 style="font-weight: 100; margin-top: -20">2022 - 2024</h4>
                         </div>
+                        <div>
+                            <h3 style="font-weight: 400">Software Engineer Intern Manager <span
+                                    style="font-weight: 200">-
+                                    Pocket Properties</span></h3>
+                            <h4 style="font-weight: 100; margin-top: -20">2021 - 2022</h4>
+                        </div>
+                    </div>
+                </div>
+                <div style="height: 30; width: 300"></div>
+                <div class="row">
+                    <div class="col js-scroll fade-in-bottom">
+                        <h1 style="font-weight: 400; margin-bottom: 5">Relevant Experience</h1>
+                        <h3 class="thin-text">- Developed and launched 3 apps for fortune 500 companies at WillowTree
+                        </h3>
+                        <h3 class="thin-text">- 2 personally published apps on Google Play Store</h3>
+                        <h3 class="thin-text">- 3 years of app design experience in Figma</h3>
+                        <h3 class="thin-text" style="max-width: 500px">- Completed 2 of 3 levels of IBM's
+                            International Hack the Mainframe event</h3>
+                        <h3 class="thin-text" style="max-width: 500px">- Proficient with algorithms, object-oriented
+                            programming, debugging, version control, and software development</h3>
+                    </div>
+                    <div style="height: 30"></div>
+                    <div class="col js-scroll fade-in-bottom">
+                        <h1 style="font-weight: 400; margin-bottom: 5">Education</h1>
+                        <h3 class="thin-text"><span style="font-weight: 200">Bachelor's Degree in Computer Science -
+                                <i>Virginia Commonwealth University</i>, 3.7 GPA</h3>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <script src="scripts.js"></script>
-    </body>
+    <script src="scripts.js"></script>
+</body>
+
 </html>
