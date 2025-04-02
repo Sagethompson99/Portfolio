@@ -28,30 +28,30 @@ const hideScrollElement = (element) => {
 const handleScrollAnimation = () => {
     scrollElements.forEach((el) => {
         if (elementInView(el, 1.25)) {
-        displayScrollElement(el);
+            displayScrollElement(el);
         } else if (elementOutofView(el)) {
-        hideScrollElement(el)
+            hideScrollElement(el)
         }
     })
 }
 
-window.addEventListener("scroll", () => { 
+window.addEventListener("scroll", () => {
     handleScrollAnimation();
 });
 
-$(document).ready(function() { 
+$(document).ready(function () {
     handleScrollAnimation();
 });
 
 function openNav() {
     var closeNav = $('.sidenav-close-button');
-    document.getElementById("sidenav").style.marginRight = "0";	
+    document.getElementById("sidenav").style.marginRight = "0";
     closeNav.toggleClass('rotate');
 }
 
 function closeNav() {
     var closeNav = $('.sidenav-close-button');
-    document.getElementById("sidenav").style.marginRight = "-301";	
+    document.getElementById("sidenav").style.marginRight = "-301";
     closeNav.toggleClass('rotate');
 }
 
@@ -59,12 +59,12 @@ function toggleContactInfo() {
     $('#contactButton').toggleClass('button-active');
 
     delay = 0;
-    $('.contact-button').each(function(index,item){
-        setTimeout(function() {
+    $('.contact-button').each(function (index, item) {
+        setTimeout(function () {
             $(item).toggleClass('show-contact-buttons');
-          
+
         }, delay);
-        delay += 50;   
+        delay += 50;
     });
 }
 
@@ -72,25 +72,25 @@ const aDiv = document.getElementById("animatedDiv");
 
 function changeWidth() {
     var scrollVal = window.pageYOffset;
-    var scrollSlow  = (scrollVal / 6);
-    
+    var scrollSlow = (scrollVal / 6);
+
     aDiv.style.width = Math.min(scrollSlow, 100) + "%";
     aDiv.style.height = Math.min(scrollSlow, 100) + "%";
 }
 
-function openVisualize(){
+function openVisualize() {
     window.open("https://play.google.com/store/apps/details?id=com.sage.Visualize")
 }
 
-function openPuttPoints(){
+function openPuttPoints() {
     window.open("https://play.google.com/store/apps/details?id=com.minigolf.puttpoints")
 }
 
-function openQdoba(){
+function openQdoba() {
     window.open("https://qdoba-application.netlify.app")
 }
 
-function openPPWebsite(){
+function openPPWebsite() {
     window.open("https://pocketproperties.netlify.app/index.html")
 }
 
@@ -98,10 +98,10 @@ function openInstagram() {
     window.open("https://www.instagram.com/sage.thompsonn/");
 }
 
-function openEmail(){
+function openEmail() {
     window.open('mailto:sagethompson85@gmail.com')
 }
 
-function openLinkedin(){
+function openLinkedin() {
     window.open("https://www.linkedin.com/in/sagethompson99/");
 }

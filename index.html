@@ -1,83 +1,104 @@
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=0">
-        <link href="styles.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
-        <title>Sage Thompson</title>
-        <link rel="icon" type="image/png" href="assets/icon.png">
-        <link rel="manifest" href="manifest.json">
-        <link rel="apple-touch-icon" href="Apple-touch-icon.png"> 
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">   
-        <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
-        <script src="https://kit.fontawesome.com/984a991b1b.js" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="blobs/blobz.css">;
-    </head> 
-    <body style="height: 100vh">
-        <div class="page-content main-page" id="home-page-content" style="overflow: hidden; padding-bottom: 20vh"> 
-            <nav>
-                <img style="width: 48; margin: 2 12 -13 0" src="assets/logo.png" alt="logo">
-                <img class="sidenav-open-button" src="assets/navbar-icon.svg" onclick="openNav()" alt="navbar-expand">
-                <a class="large-screen-nav home" id="active" href="#">Home</a>
-                <a class="large-screen-nav apps" href="apps.html">Apps</a>
-                <a class="large-screen-nav web" href="web.html">Web</a>
-                <a class="large-screen-nav experience" href="experience.html">Experience</a>
-            </nav>
-            <div class="sidenav" id="sidenav">
-                <img id="sidenav-close-button" class="sidenav-close-button" src="assets/sidenav-close-button.svg" onclick="closeNav()" alt="navbar-expand">
-                <a class="large-screen-nav home" id="sidenav-active-home" href="#">Home</a>
-                <a class="large-screen-nav apps" href="apps.html">Apps</a>
-                <a class="large-screen-nav web" href="web.html">Web</a>
-                <a class="large-screen-nav experience" href="experience.html">Experience</a>
-            </div>
-            <div class="row" id="top-content">
-                <div class="col">
-                    <div class="row">
-                        <div class="col" style="position: relative; z-index: 99">
-                            <div style="display: inline-block">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Sage Thompson</title>
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="Apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script src="https://kit.fontawesome.com/984a991b1b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="blobs/blobz.css">;
+</head>
+
+<body style="height: 100vh">
+    <div class="page-content main-page" id="home-page-content" style="overflow: hidden; padding-bottom: 20vh">
+        <nav>
+            <img style="width: 48; margin: 2 12 -13 0" src="assets/logo.png" alt="logo">
+            <img class="sidenav-open-button" src="assets/navbar-icon.svg" onclick="openNav()" alt="navbar-expand">
+            <a class="large-screen-nav home" id="active" href="#">Home</a>
+            <a class="large-screen-nav apps" href="apps.html">Apps</a>
+            <a class="large-screen-nav web" href="web.html">Web</a>
+            <a class="large-screen-nav experience" href="experience.html">Experience</a>
+        </nav>
+        <div class="sidenav" id="sidenav">
+            <img id="sidenav-close-button" class="sidenav-close-button" src="assets/sidenav-close-button.svg"
+                onclick="closeNav()" alt="navbar-expand">
+            <a class="large-screen-nav home" id="sidenav-active-home" href="#">Home</a>
+            <a class="large-screen-nav apps" href="apps.html">Apps</a>
+            <a class="large-screen-nav web" href="web.html">Web</a>
+            <a class="large-screen-nav experience" href="experience.html">Experience</a>
+        </div>
+        <div class="row" id="top-content">
+            <div class="col">
+                <div class="row">
+                    <div class="col" style="position: relative; z-index: 99">
+                        <div style="display: inline-block">
                             <h1 class="type" id="main-title" class="js-scroll fade-in-bottom">Sage Thompson</h1>
                         </div>
-                            <h3 id="job-title"class="js-scroll fade-in-bottom">Software Engineer</h3>
-                        
-                            <button id="contactButton" class="js-scroll fade-in-bottom" onclick="toggleContactInfo()">Contact</button>
-                            <div id="contactButtonContainer" class="col">
-                                <img class="contact-button" src="assets/social_icons/email-button.svg" onclick="openEmail()" alt="email">
-                                <img class="contact-button" src="assets/social_icons/instagram-button.svg" onclick="openInstagram()" alt="instagram">
-                                <img class="contact-button" src="assets/social_icons/linkedin-button.svg" onclick="openLinkedin()" alt="linkedin">
-                            </div>
-                        </div>
+                        <h3 id="job-title" class="js-scroll fade-in-bottom">Software Engineer</h3>
 
-                        <div class="col" style="display: grid; max-width: 80vw; padding-right: 1vw;">
-                            <div class="tk-blob grid-stack" style="--time: 130s; --amount: 6; --fill: #60A4E5; opacity: 1; margin-top: 10vh; margin-left: 10vw; margin-right: -7vw">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 747.2 726.7">
-                                  <path d="M539.8 137.6c98.3 69 183.5 124 203 198.4 19.3 74.4-27.1 168.2-93.8 245-66.8 76.8-153.8 136.6-254.2 144.9-100.6 8.2-214.7-35.1-292.7-122.5S-18.1 384.1 7.4 259.8C33 135.6 126.3 19 228.5 2.2c102.1-16.8 213.2 66.3 311.3 135.4z"></path>
-                                </svg>
-                            </div>
-                            <div class="tk-blob grid-stack" style="--time: 40s; --amount: 9; --fill: #E947FF; opacity: 0.8; margin-top: 5vw; margin-left: -10vw; margin-right: 10vw">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 747.2 726.7">
-                                  <path d="M539.8 137.6c98.3 69 183.5 124 203 198.4 19.3 74.4-27.1 168.2-93.8 245-66.8 76.8-153.8 136.6-254.2 144.9-100.6 8.2-214.7-35.1-292.7-122.5S-18.1 384.1 7.4 259.8C33 135.6 126.3 19 228.5 2.2c102.1-16.8 213.2 66.3 311.3 135.4z"></path>
-                                </svg>
-                            </div>
-                            <div class="tk-blob grid-stack" style="--time: 75s; --amount: 4; --fill: #1CD371; opacity: 0.8; margin-left: 10vh; margin-right: -8vw">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 747.2 726.7">
-                                  <path d="M539.8 137.6c98.3 69 183.5 124 203 198.4 19.3 74.4-27.1 168.2-93.8 245-66.8 76.8-153.8 136.6-254.2 144.9-100.6 8.2-214.7-35.1-292.7-122.5S-18.1 384.1 7.4 259.8C33 135.6 126.3 19 228.5 2.2c102.1-16.8 213.2 66.3 311.3 135.4z"></path>
-                                </svg>
-                            </div>
-                            <div class="tk-blob grid-stack" style="--fill: #e9fe47; --amount: 8; opacity: 0.8; margin-top: -8vh">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 425.9 377">
-                                  <path d="M389.3 42c39.8 40.8 47.5 116.3 21.3 165.4-26.1 49.1-86 71.8-145.9 104.3-59.8 32.5-119.6 74.8-168.9 63.4C46.5 363.7 7.6 298.5 1 235.7-5.5 173 20.3 112.5 59.8 71.9 99.3 31.2 152.4 10.2 215 2.8 277.5-4.7 349.5 1.2 389.3 42z"></path>
-                                </svg>
-                              </div>
+                        <button id="contactButton" class="js-scroll fade-in-bottom"
+                            onclick="toggleContactInfo()">Contact</button>
+                        <div id="contactButtonContainer" class="col">
+                            <img class="contact-button" src="assets/social_icons/email-button.svg" onclick="openEmail()"
+                                alt="email">
+                            <img class="contact-button" src="assets/social_icons/instagram-button.svg"
+                                onclick="openInstagram()" alt="instagram">
+                            <img class="contact-button" src="assets/social_icons/linkedin-button.svg"
+                                onclick="openLinkedin()" alt="linkedin">
                         </div>
+                    </div>
+
+                    <div class="col" style="display: grid; max-width: 80vw; padding-right: 1vw;">
+                        <div class="tk-blob grid-stack"
+                            style="--time: 130s; --amount: 6; --fill: #60A4E5; opacity: 1; margin-top: 10vh; margin-left: 10vw; margin-right: -7vw">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 747.2 726.7">
+                                <path
+                                    d="M539.8 137.6c98.3 69 183.5 124 203 198.4 19.3 74.4-27.1 168.2-93.8 245-66.8 76.8-153.8 136.6-254.2 144.9-100.6 8.2-214.7-35.1-292.7-122.5S-18.1 384.1 7.4 259.8C33 135.6 126.3 19 228.5 2.2c102.1-16.8 213.2 66.3 311.3 135.4z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="tk-blob grid-stack"
+                            style="--time: 40s; --amount: 9; --fill: #E947FF; opacity: 0.8; margin-top: 5vw; margin-left: -10vw; margin-right: 10vw">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 747.2 726.7">
+                                <path
+                                    d="M539.8 137.6c98.3 69 183.5 124 203 198.4 19.3 74.4-27.1 168.2-93.8 245-66.8 76.8-153.8 136.6-254.2 144.9-100.6 8.2-214.7-35.1-292.7-122.5S-18.1 384.1 7.4 259.8C33 135.6 126.3 19 228.5 2.2c102.1-16.8 213.2 66.3 311.3 135.4z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="tk-blob grid-stack"
+                            style="--time: 75s; --amount: 4; --fill: #1CD371; opacity: 0.8; margin-left: 10vh; margin-right: -8vw">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 747.2 726.7">
+                                <path
+                                    d="M539.8 137.6c98.3 69 183.5 124 203 198.4 19.3 74.4-27.1 168.2-93.8 245-66.8 76.8-153.8 136.6-254.2 144.9-100.6 8.2-214.7-35.1-292.7-122.5S-18.1 384.1 7.4 259.8C33 135.6 126.3 19 228.5 2.2c102.1-16.8 213.2 66.3 311.3 135.4z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="tk-blob grid-stack"
+                            style="--fill: #e9fe47; --amount: 8; opacity: 0.8; margin-top: -8vh">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 425.9 377">
+                                <path
+                                    d="M389.3 42c39.8 40.8 47.5 116.3 21.3 165.4-26.1 49.1-86 71.8-145.9 104.3-59.8 32.5-119.6 74.8-168.9 63.4C46.5 363.7 7.6 298.5 1 235.7-5.5 173 20.3 112.5 59.8 71.9 99.3 31.2 152.4 10.2 215 2.8 277.5-4.7 349.5 1.2 389.3 42z">
+                                </path>
+                            </svg>
                         </div>
                     </div>
                 </div>
-                <div class="spacer"></div>   
             </div>
         </div>
+        <div class="spacer"></div>
+    </div>
+    </div>
 
-        <script src="scripts.js"></script>
-    </body>
+    <script src="scripts.js"></script>
+</body>
+
 </html>

@@ -1,83 +1,107 @@
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=0">
-        <link href="styles.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
-        <title>Sage Thompson</title>
-        <link rel="icon" type="image/png" href="assets/icon.png">
-        <link rel="manifest" href="manifest.json">
-        <link rel="apple-touch-icon" href="Apple-touch-icon.png"> 
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">   
-        <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
-        <script src="https://kit.fontawesome.com/984a991b1b.js" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="blobs/blobz.min.css">
-    </head> 
-    <body>
-        <script>
-            function hideLoader(loaderID, imageID) {
-                document.getElementById(loaderID).classList.add("hidden");
-                document.getElementById(imageID).classList.remove("hidden");
-            }
-        </script>
-        <div class="page-content" style="padding-bottom: 80px"> 
-            <nav>
-                <img style="width: 48; margin: 2 12 -13 0" src="assets/logo.png" alt="logo">
-                <img class="sidenav-open-button" src="assets/navbar-icon.svg" onclick="openNav()" alt="navbar-expand">
-                <a class="large-screen-nav home" href="index.html">Home</a>
-                <a class="large-screen-nav apps" href="apps.html">Apps</a>
-                <a class="large-screen-nav web"  id="active" href="#">Web</a>
-                <a class="large-screen-nav experience" href="experience.html">Experience</a>
-            </nav>
-            <div class="sidenav" id="sidenav">
-                <img id="sidenav-close-button" class="sidenav-close-button" src="assets/sidenav-close-button.svg" onclick="closeNav()" alt="navbar-expand">
-                <a class="large-screen-nav home" href="index.html">Home</a>
-                <a class="large-screen-nav apps" href="apps.html">Apps</a>
-                <a class="large-screen-nav web" id="sidenav-active-web" href="web.html">Web</a>
-                <a class="large-screen-nav experience" href="experience.html">Experience</a>
-            </div>
-            <div class="col" id="top-content">
-                    <div class="row js-scroll fade-in-bottom section" style="transition: 0.2s">
-                        <div class="main-image loading" id="load5"><div class="loader"></div></div>
-                        <img class="main-image hidden" id="image5" onload="hideLoader('load5', 'image5')" src="assets/website_images/pocketpropertieswebsite.png" alt="pocket properties website">
-                        <div class="spacer"></div>
-                        <div class="col" style="margin: 30 0 30 0">
-                            <h1 style="color: white; font-weight: 500">Pocket Properties</h1>
-                            <h3 style="color: white; font-weight: 300">Redesigned website I created as a solo project for Pocket Properties while interning for them.
-                            I created this website using a combination of CSS, HTML, and Javascript. It is being hosted for free on Netlify</h3>
-                            <button class="primary-button" onclick="openPPWebsite()" style="background-color: #9253EB; color: white" >Go to website</button>
-                        </div> 
-                    </div>
-            
-                    <div class="row js-scroll fade-in-bottom section">
-                        <div class="main-image loading" id="load6"><div class="loader"></div></div>
-                        <img class="main-image hidden" id="image6" onload="hideLoader('load6', 'image6')" src="assets/website_images/mydictionaryWebsite.png" alt="MyDictionary website">
-                        <div class="spacer"></div>
-                        <div class="col .js-scroll" style="margin: 30 0 30 0">
-                            <h1 style="color: white; font-weight: 500">MyDictionary</h1>
-                            <h3 style="color: white; font-weight: 300">MyDictionary is a text-based social media platform. It allows users to create and share definitions, acronyms, and quotes created by themselves and others. I 
-                            created MyDictionary in my CMSC 508 Databases class at VCU using PHP, SQL, HTML, and CSS. </h3>
-                            <button class="primary-button" onclick='' style="background-color: #373639; color: #9B9B9B" >Currently Unavailable</button>
-                        </div>
-                    </div>
 
-                    <div class="row js-scroll fade-in-bottom section">
-                        <div class="main-image loading" id="load7"><div class="loader"></div></div>
-                        <img class="main-image hidden" id="image7" onload="hideLoader('load7', 'image7')" src="assets/website_images/qdobawebsite.png" alt="Qdoba Richmond website">
-                        <div class="spacer"></div>
-                        <div class="col .js-scroll" style="margin: 30 0 30 0">
-                            <h1 style="color: white; font-weight: 500">Qdoba Job Application</h1>
-                            <h3 style="color: white; font-weight: 300">A website for a local QDoba that allows users to fill out and submit an online job application. When a new application is submitted it is saved to Google Sheets, an email notification is sent to the manager, and the manager can then view the application. I created this website using HTML, CSS, Javascript, and Google Scripts</h3>
-                            <button class="primary-button" onclick='openQdoba()' style="background-color: #F99D1C; color: white" >Go to website</button>
-                        </div>
-                    </div>
-               
-                <div class="spacer"></div>
-            </div>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Sage Thompson</title>
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="Apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script src="https://kit.fontawesome.com/984a991b1b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="blobs/blobz.min.css">
+</head>
+
+<body>
+    <script>
+        function hideLoader(loaderID, imageID) {
+            document.getElementById(loaderID).classList.add("hidden");
+            document.getElementById(imageID).classList.remove("hidden");
+        }
+    </script>
+    <div class="page-content" style="padding-bottom: 80px">
+        <nav>
+            <img style="width: 48; margin: 2 12 -13 0" src="assets/logo.png" alt="logo">
+            <img class="sidenav-open-button" src="assets/navbar-icon.svg" onclick="openNav()" alt="navbar-expand">
+            <a class="large-screen-nav home" href="index.html">Home</a>
+            <a class="large-screen-nav apps" href="apps.html">Apps</a>
+            <a class="large-screen-nav web" id="active" href="#">Web</a>
+            <a class="large-screen-nav experience" href="experience.html">Experience</a>
+        </nav>
+        <div class="sidenav" id="sidenav">
+            <img id="sidenav-close-button" class="sidenav-close-button" src="assets/sidenav-close-button.svg"
+                onclick="closeNav()" alt="navbar-expand">
+            <a class="large-screen-nav home" href="index.html">Home</a>
+            <a class="large-screen-nav apps" href="apps.html">Apps</a>
+            <a class="large-screen-nav web" id="sidenav-active-web" href="web.html">Web</a>
+            <a class="large-screen-nav experience" href="experience.html">Experience</a>
         </div>
+        <div class="col" id="top-content">
+            <div class="row js-scroll fade-in-bottom section" style="transition: 0.2s">
+                <div class="main-image loading" id="load5">
+                    <div class="loader"></div>
+                </div>
+                <img class="main-image hidden" id="image5" onload="hideLoader('load5', 'image5')"
+                    src="assets/website_images/pocketpropertieswebsite.png" alt="pocket properties website">
+                <div class="spacer"></div>
+                <div class="col" style="margin: 30 0 30 0">
+                    <h1 style="color: white; font-weight: 500">Pocket Properties</h1>
+                    <h3 style="color: white; font-weight: 300">Redesigned website I created as a solo project for Pocket
+                        Properties while interning for them.
+                        I created this website using a combination of CSS, HTML, and Javascript. It is being hosted for
+                        free on Netlify</h3>
+                    <button class="primary-button" onclick="openPPWebsite()"
+                        style="background-color: #9253EB; color: white">Go to website</button>
+                </div>
+            </div>
 
-        <script src="scripts.js"></script>
-    </body>
+            <div class="row js-scroll fade-in-bottom section">
+                <div class="main-image loading" id="load6">
+                    <div class="loader"></div>
+                </div>
+                <img class="main-image hidden" id="image6" onload="hideLoader('load6', 'image6')"
+                    src="assets/website_images/mydictionaryWebsite.png" alt="MyDictionary website">
+                <div class="spacer"></div>
+                <div class="col .js-scroll" style="margin: 30 0 30 0">
+                    <h1 style="color: white; font-weight: 500">MyDictionary</h1>
+                    <h3 style="color: white; font-weight: 300">MyDictionary is a text-based social media platform. It
+                        allows users to create and share definitions, acronyms, and quotes created by themselves and
+                        others. I
+                        created MyDictionary in my CMSC 508 Databases class at VCU using PHP, SQL, HTML, and CSS. </h3>
+                    <button class="primary-button" onclick=''
+                        style="background-color: #373639; color: #9B9B9B">Currently Unavailable</button>
+                </div>
+            </div>
+
+            <div class="row js-scroll fade-in-bottom section">
+                <div class="main-image loading" id="load7">
+                    <div class="loader"></div>
+                </div>
+                <img class="main-image hidden" id="image7" onload="hideLoader('load7', 'image7')"
+                    src="assets/website_images/qdobawebsite.png" alt="Qdoba Richmond website">
+                <div class="spacer"></div>
+                <div class="col .js-scroll" style="margin: 30 0 30 0">
+                    <h1 style="color: white; font-weight: 500">Qdoba Job Application</h1>
+                    <h3 style="color: white; font-weight: 300">A website for a local QDoba that allows users to fill out
+                        and submit an online job application. When a new application is submitted it is saved to Google
+                        Sheets, an email notification is sent to the manager, and the manager can then view the
+                        application. I created this website using HTML, CSS, Javascript, and Google Scripts</h3>
+                    <button class="primary-button" onclick='openQdoba()'
+                        style="background-color: #F99D1C; color: white">Go to website</button>
+                </div>
+            </div>
+
+            <div class="spacer"></div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
 </html>

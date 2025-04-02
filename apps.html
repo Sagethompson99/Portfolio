@@ -1,110 +1,133 @@
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=0">
-        <link href="styles.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
-        <title>Sage Thompson</title>
-        <link rel="icon" type="image/png" href="assets/icon.png">
-        <link rel="manifest" href="manifest.json">
-        <link rel="apple-touch-icon" href="Apple-touch-icon.png"> 
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">   
-        <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
-        <script src="https://kit.fontawesome.com/984a991b1b.js" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="blobs/blobz.min.css">
-    </head> 
-    <body>
-        <script>
-            function hideLoader(loaderID, imageID) {
-                document.getElementById(loaderID).classList.add("hidden");
-                document.getElementById(imageID).classList.remove("hidden");
-            }
-        </script>
-        <div class="page-content" style="padding-bottom: 80px"> 
-            <nav>
-                <img style="width: 48; margin: 2 12 -13 0" src="assets/logo.png" alt="logo">
-                <img class="sidenav-open-button" src="assets/navbar-icon.svg" onclick="openNav()" alt="navbar-expand">
-                <a class="large-screen-nav home" href="index.html">Home</a>
-                <a class="large-screen-nav apps" id="active" href="#">Apps</a>
-                <a class="large-screen-nav web" href="web.html">Web</a>
-                <a class="large-screen-nav experience" href="experience.html">Experience</a>
-            </nav>
-            <div class="sidenav" id="sidenav">
-                <img id="sidenav-close-button" class="sidenav-close-button" src="assets/sidenav-close-button.svg" onclick="closeNav()" alt="navbar-expand">
-                <a class="large-screen-nav home" href="index.html">Home</a>
-                <a class="large-screen-nav apps" id="sidenav-active-apps" href="#">Apps</a>
-                <a class="large-screen-nav web" href="web.html">Web</a>
-                <a class="large-screen-nav experience" href="experience.html">Experience</a>
-            </div>
-            <div class="col" id="top-content">
-                    <div class="row js-scroll fade-in-bottom section" style="transition: 0.2s">
-                        <div class="main-image loading" id="load1"><div class="loader"></div></div>
-                        <img class="main-image hidden" id="image1" onload="hideLoader('load1', 'image1')" src="assets/app_images/visualize-image.png" alt="visualize image">
-                        <div class="spacer"></div>
-                        <div class="col" style="margin: 30">
-                            <h1 style="color: white; font-weight: 500">Visualize</h1>
-                            <h3 style="color: white; font-weight: 300">Create millions of different search 
-                                scenarios and watch a search 
-                                algorithm execute each step in
-                                real-time. Visualize supports
-                                Dijkstra's, Breadth-First, and 
-                                A* search algorithms.
-                                I built this app from scratch as a
-                                solo project in my free time </h3>
-                            <button class="primary-button" onclick="openVisualize()" style="background-color: #60A4E5; color: white" >View on Google Play</button>
-                        </div>
-                        
-                    </div>
-                    <div class="row js-scroll fade-in-bottom section">
-                        <div class="main-image loading" id="load2"><div class="loader"></div></div>
-                        <img class="main-image display3 hidden" id="image2" onload="hideLoader('load2', 'image2')" src="assets/app_images/pocket-properties-image.png" alt=" pocket properties image">
-                        <div class="spacer display2"></div>
-                        <div class="col .js-scroll display1" style="margin: 30">
-                            <h1 style="color: white; font-weight: 500">Pocket Properties</h1>
-                            <h3 style="color: white; font-weight: 300">Purchase and sell fractional shares 
-                                of real estate. I created the design
-                                for this app and worked with a 
-                                team of developers to code it 
-                                during an internship with
-                                Pocket Properties LLC</h3>
-                            <button class="primary-button" style="background-color: #373639; color: #9B9B9B" >Coming Soon</button>
-                        </div>
-                    </div>
 
-                    <div class="row js-scroll fade-in-bottom section">
-                        <div class="main-image loading" id="load3"><div class="loader"></div></div>
-                        <img class="main-image hidden" id="image3" onload="hideLoader('load3', 'image3')" src="assets/app_images/putt-points-image.png" alt="putt points image">
-                        <div class="spacer"></div>
-                        <div class="col" style="margin: 30">
-                            <h1 style="color: white; font-weight: 500">Putt Points</h1>
-                            <h3 style="color: white; font-weight: 300">A scorecard app for mini-golf. I
-                                designed this app and built it with  
-                                the help of a team of 3 other 
-                                developers in a UI Design class
-                                during my junior year of college
-                                at Virginia Commonwealth University</h3>
-                            <button class="primary-button" onclick="openPuttPoints()" style="background-color: #1CD371; color: white" >View on Google Play</button>
-                        </div>
-                    </div>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Sage Thompson</title>
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="Apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script src="https://kit.fontawesome.com/984a991b1b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="blobs/blobz.min.css">
+</head>
 
-                    <div class="row js-scroll fade-in-bottom section">
-                        <div class="main-image loading" id="load4"><div class="loader"></div></div>
-                        <img class="main-image display3 hidden" id="image4" onload="hideLoader('load4', 'image4')" src="assets/app_images/course-quest-image.png" alt="course quest image">
-                        <div class="spacer display2"></div>
-                        <div class="col display1" style="margin: 30">
-                            <h1 style="color: white; font-weight: 500">Course Quest</h1>
-                            <h3 style="color: white; font-weight: 300">Search, save, and share thousands of free online courses from 4 major course providers (Coursera, Future Learn, Skillshare, and Codecademy).
-                            Designed and developed this app with a team of 3 other developers during my Sophomore year at VCU</h3>
-                            <button class="primary-button" onclick="" style="background-color: #373639; color: #9B9B9B" >Unpublished</button>
-                        </div>
-                    </div>
-               
-                <div class="spacer"></div>
-            </div>
+<body>
+    <script>
+        function hideLoader(loaderID, imageID) {
+            document.getElementById(loaderID).classList.add("hidden");
+            document.getElementById(imageID).classList.remove("hidden");
+        }
+    </script>
+    <div class="page-content" style="padding-bottom: 80px">
+        <nav>
+            <img style="width: 48; margin: 2 12 -13 0" src="assets/logo.png" alt="logo">
+            <img class="sidenav-open-button" src="assets/navbar-icon.svg" onclick="openNav()" alt="navbar-expand">
+            <a class="large-screen-nav home" href="index.html">Home</a>
+            <a class="large-screen-nav apps" id="active" href="#">Apps</a>
+            <a class="large-screen-nav web" href="web.html">Web</a>
+            <a class="large-screen-nav experience" href="experience.html">Experience</a>
+        </nav>
+        <div class="sidenav" id="sidenav">
+            <img id="sidenav-close-button" class="sidenav-close-button" src="assets/sidenav-close-button.svg"
+                onclick="closeNav()" alt="navbar-expand">
+            <a class="large-screen-nav home" href="index.html">Home</a>
+            <a class="large-screen-nav apps" id="sidenav-active-apps" href="#">Apps</a>
+            <a class="large-screen-nav web" href="web.html">Web</a>
+            <a class="large-screen-nav experience" href="experience.html">Experience</a>
         </div>
+        <div class="col" id="top-content">
+            <div class="row js-scroll fade-in-bottom section" style="transition: 0.2s">
+                <div class="main-image loading" id="load1">
+                    <div class="loader"></div>
+                </div>
+                <img class="main-image hidden" id="image1" onload="hideLoader('load1', 'image1')"
+                    src="assets/app_images/visualize-image.png" alt="visualize image">
+                <div class="spacer"></div>
+                <div class="col" style="margin: 30">
+                    <h1 style="color: white; font-weight: 500">Visualize</h1>
+                    <h3 style="color: white; font-weight: 300">Create millions of different search
+                        scenarios and watch a search
+                        algorithm execute each step in
+                        real-time. Visualize supports
+                        Dijkstra's, Breadth-First, and
+                        A* search algorithms.
+                        I built this app from scratch as a
+                        solo project in my free time </h3>
+                    <button class="primary-button" onclick="openVisualize()"
+                        style="background-color: #60A4E5; color: white">View on Google Play</button>
+                </div>
 
-        <script src="scripts.js"></script>
-    </body>
+            </div>
+            <div class="row js-scroll fade-in-bottom section">
+                <div class="main-image loading" id="load2">
+                    <div class="loader"></div>
+                </div>
+                <img class="main-image display3 hidden" id="image2" onload="hideLoader('load2', 'image2')"
+                    src="assets/app_images/pocket-properties-image.png" alt=" pocket properties image">
+                <div class="spacer display2"></div>
+                <div class="col .js-scroll display1" style="margin: 30">
+                    <h1 style="color: white; font-weight: 500">Pocket Properties</h1>
+                    <h3 style="color: white; font-weight: 300">Purchase and sell fractional shares
+                        of real estate. I created the design
+                        for this app and worked with a
+                        team of developers to code it
+                        during an internship with
+                        Pocket Properties LLC</h3>
+                    <button class="primary-button" style="background-color: #373639; color: #9B9B9B">Coming
+                        Soon</button>
+                </div>
+            </div>
+
+            <div class="row js-scroll fade-in-bottom section">
+                <div class="main-image loading" id="load3">
+                    <div class="loader"></div>
+                </div>
+                <img class="main-image hidden" id="image3" onload="hideLoader('load3', 'image3')"
+                    src="assets/app_images/putt-points-image.png" alt="putt points image">
+                <div class="spacer"></div>
+                <div class="col" style="margin: 30">
+                    <h1 style="color: white; font-weight: 500">Putt Points</h1>
+                    <h3 style="color: white; font-weight: 300">A scorecard app for mini-golf. I
+                        designed this app and built it with
+                        the help of a team of 3 other
+                        developers in a UI Design class
+                        during my junior year of college
+                        at Virginia Commonwealth University</h3>
+                    <button class="primary-button" onclick="openPuttPoints()"
+                        style="background-color: #1CD371; color: white">View on Google Play</button>
+                </div>
+            </div>
+
+            <div class="row js-scroll fade-in-bottom section">
+                <div class="main-image loading" id="load4">
+                    <div class="loader"></div>
+                </div>
+                <img class="main-image display3 hidden" id="image4" onload="hideLoader('load4', 'image4')"
+                    src="assets/app_images/course-quest-image.png" alt="course quest image">
+                <div class="spacer display2"></div>
+                <div class="col display1" style="margin: 30">
+                    <h1 style="color: white; font-weight: 500">Course Quest</h1>
+                    <h3 style="color: white; font-weight: 300">Search, save, and share thousands of free online courses
+                        from 4 major course providers (Coursera, Future Learn, Skillshare, and Codecademy).
+                        Designed and developed this app with a team of 3 other developers during my Sophomore year at
+                        VCU</h3>
+                    <button class="primary-button" onclick=""
+                        style="background-color: #373639; color: #9B9B9B">Unpublished</button>
+                </div>
+            </div>
+
+            <div class="spacer"></div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
 </html>
